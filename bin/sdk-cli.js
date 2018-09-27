@@ -43,14 +43,7 @@ const getBaseConfig = ( options = {} ) => {
 };
 
 const build = ( target, argv ) => {
-		const targetConfig =target.config( { argv, getBaseConfig, calypsoRoot } );
-	const config = {
-		...targetConfig,
-		output: {
-			...targetConfig.output,
-			publicPath: '/wp-content/plugins/jetpack/_inc/blocks/',
-		},
-	};
+	const config = target.config( { argv, getBaseConfig, calypsoRoot } );
 	const compiler = webpack( config );
 
 	// watch takes an additional argument, adjust accordingly

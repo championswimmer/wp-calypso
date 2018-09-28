@@ -4,7 +4,7 @@
   "description": "The Muriel Base Components",
   "module": "dist/esm/index.js",
   "dependencies": {
-	  "react": "^16.5.0"
+	  "react": "16.5.2"
   },
   "keywords": [],
   "author": "Ben Lowery <ben.lowery@automattic.com> (https://automattic.com)",
